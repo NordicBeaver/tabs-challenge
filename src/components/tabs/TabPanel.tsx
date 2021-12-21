@@ -8,5 +8,5 @@ export default function TabPanel({ index, children }: PropsWithChildren<{ index:
     return null;
   }
 
-  return <div>{children}</div>;
+  return <div role="tabpanel">{children}</div>;
 }

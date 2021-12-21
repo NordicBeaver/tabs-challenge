@@ -15,7 +15,12 @@ export default function TabButton({ index, children }: PropsWithChildren<{ index
   const { currentTabIndex, setCurrentTabIndex } = useTabsContext()!;
 
   return (
-    <TabButtonStyled isActive={index === currentTabIndex} onClick={() => setCurrentTabIndex(index)}>
+    <TabButtonStyled
+      isActive={index === currentTabIndex}
+      onClick={() => setCurrentTabIndex(index)}
+      role="tab"
+      aria-selected={index === currentTabIndex}
+    >
       {children}
     </TabButtonStyled>
   );

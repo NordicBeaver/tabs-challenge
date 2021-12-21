@@ -6,5 +6,5 @@ const TabListStyled = styled.div`
 `;
 
 export default function TabList({ children }: PropsWithChildren<{}>) {
-  return <TabListStyled>{children}</TabListStyled>;
+  return <TabListStyled role="tablist">{children}</TabListStyled>;
 }
