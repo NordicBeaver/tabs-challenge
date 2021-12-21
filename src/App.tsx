@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import GuardianLatestArticles from './GuardianLatestArticles';
+import GuardianLatestArticles from './components/GuardianLatestArticles';
 
 const Containter = styled.div`
   max-width: 480px;

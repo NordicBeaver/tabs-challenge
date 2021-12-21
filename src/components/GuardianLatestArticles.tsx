@@ -1,10 +1,10 @@
 import React from 'react';
-import GuardianLatestArticlesList from './components/GuardianLatestArticlesList';
-import TabButton from './components/tabs/TabButton';
-import TabList from './components/tabs/TabList';
-import TabPanel from './components/tabs/TabPanel';
-import TabPanels from './components/tabs/TabPanels';
-import Tabs from './components/tabs/Tabs';
+import GuardianLatestArticlesList from './GuardianLatestArticlesList';
+import TabButton from './tabs/TabButton';
+import TabList from './tabs/TabList';
+import TabPanel from './tabs/TabPanel';
+import TabPanels from './tabs/TabPanels';
+import Tabs from './tabs/Tabs';
 
 export default function GuardianLatestArticles() {
   return (
