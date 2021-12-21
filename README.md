@@ -23,3 +23,4 @@ Thing I would consider improving if I had more time.
 1. Remove the flickering on tabs change.
 1. Figure out the 100% correct way to use ARIA attributes.
 1. Specify the browsers we want to support using _browserslist_.
+1. Tests.
