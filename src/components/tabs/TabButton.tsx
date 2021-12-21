@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import styled from 'styled-components';
 import { useTabsContext } from './TabsContext';
 
@@ -11,12 +11,12 @@ const TabButtonStyled = styled.button<{ isActive?: boolean }>`
   font-size: 1em;
 `;
 
-export default function TabButton({ index }: { index: number }) {
+export default function TabButton({ index, children }: PropsWithChildren<{ index: number }>) {
   const { currentTabIndex, setCurrentTabIndex } = useTabsContext()!;
 
   return (
     <TabButtonStyled isActive={index === currentTabIndex} onClick={() => setCurrentTabIndex(index)}>
-      Tab - {index}
+      {children}
     </TabButtonStyled>
   );
 }
