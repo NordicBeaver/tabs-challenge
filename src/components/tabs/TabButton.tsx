@@ -5,7 +5,7 @@ import { useTabsContext } from './TabsContext';
 const TabButtonStyled = styled.button<{ isActive?: boolean }>`
   flex-grow: 1;
   border: none;
-  background-color: ${(props) => (props.isActive === true ? '#ededed' : '#ffffff')};
+  background-color: ${(props) => (props.isActive === true ? '#ffffff' : '#ededed')};
   cursor: ${(props) => (props.isActive === true ? 'default' : 'pointer')};
   padding: 1em;
   font-size: 1em;
